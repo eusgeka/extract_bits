@@ -1,6 +1,5 @@
 version: 2
 jobs:
-
     working_directory: ~/extract_bits
 
     docker:
