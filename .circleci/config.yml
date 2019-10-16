@@ -5,6 +5,7 @@ jobs:
       only:
         - master
         - /development/
+        - /feature_junit_5/
         - /eusgeka-.*/
 
     working_directory: ~/extract_bits
