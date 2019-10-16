@@ -1,12 +1,7 @@
 version: 2
 jobs:
   build:
-    branches:
-      only:
-        - master
-        - /development/
-
-    working_directory: ~/quick_sort
+    working_directory: ~/extract_bits
 
     docker:
       - image: circleci/openjdk:11.0-stretch
@@ -23,7 +18,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.m2
-          key: quick_sort-{{ checksum "pom.xml" }}
+          key: extract_bits-{{ checksum "pom.xml" }}
 
       - run: mvn clean test
 
