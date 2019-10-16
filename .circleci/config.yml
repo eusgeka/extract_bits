@@ -1,10 +1,5 @@
 version: 2
 jobs:
-  build:
-    branches:
-      only:
-        - master
-        - /development/
 
     working_directory: ~/extract_bits
 
