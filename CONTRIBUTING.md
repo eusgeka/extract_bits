@@ -1,12 +1,12 @@
-## Contribute to Quick Sort Algorithm
+## Contribute to Extract Bits Algorithm
 
 #### **Found a bug?**
 
 * **Open up a GitHub issue **
 
-* **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/eusgeka/quick_sort/issues).
+* **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/eusgeka/extract_bits/issues).
 
-* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/eusgeka/quick_sort/issues). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior.
+* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/eusgeka/extract_bits/issues). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior.
 
 #### **Did you write a patch that fixes a bug?**
 
@@ -20,8 +20,8 @@ Changes that are cosmetic in nature and do not add anything substantial to the s
 
 #### **Do you intend to add a new feature or change an existing one?**
 
-* Suggest your change in [I have a suggestion](https://github.com/eusgeka/quick_sort/issues) and start writing code.
+* Suggest your change in [I have a suggestion](https://github.com/eusgeka/extract_bits/issues) and start writing code.
 
 #### **Do you have questions about the source code?**
 
-* Ask any question about how to use Quick Sort Algorithm in the [I have a question](https://github.com/eusgeka/quick_sort/issues).
+* Ask any question about how to use Extract Bits Algorithm in the [I have a question](https://github.com/eusgeka/extract_bits/issues).
