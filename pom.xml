@@ -50,7 +50,6 @@
         </dependency>
 
 	<!-- ToDo : Need to upgrade to JUNIT 5 -->
-	<!-- gpg -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
