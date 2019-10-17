@@ -49,7 +49,8 @@
             <version>${log4j-slf4j-impl.verssion}</version>
         </dependency>
 
-        <!-- ToDo : Need to upgrade to JUNIT 5 -->
+	<!-- ToDo : Need to upgrade to JUNIT 5 -->
+	<!-- Really need to update this to a later version -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
