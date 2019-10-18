@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2019 Epsilon AgentX <epsilonagentx at gmail.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -17,12 +17,13 @@
  */
 package org.raspi.noobs.extract.bits;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
 import java.util.List;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,11 +31,11 @@ public class ExtractBitsFastPassTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ExtractBitsFastPassTest.class);
 
-    @Before
+    @BeforeEach
     public void setUp() {
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
     }
 
@@ -44,11 +45,11 @@ public class ExtractBitsFastPassTest {
         long testNumber = 88;
         ExtractBits interviewee = new ExtractBitsFastPass();
         List<Long> longList = interviewee.summationOfSetBits(testNumber);
-        Assert.assertFalse(longList.isEmpty());
-        Assert.assertEquals(3, longList.size());
-        Assert.assertEquals(8, longList.get(0).longValue());
-        Assert.assertEquals(16, longList.get(1).longValue());
-        Assert.assertEquals(64, longList.get(2).longValue());
+        assertFalse(longList.isEmpty());
+        assertEquals(3, longList.size());
+        assertEquals(8, longList.get(0).longValue());
+        assertEquals(16, longList.get(1).longValue());
+        assertEquals(64, longList.get(2).longValue());
     }
 
     @Test
@@ -57,9 +58,9 @@ public class ExtractBitsFastPassTest {
         long testNumber = 1073741824;
         ExtractBits interviewee = new ExtractBitsFastPass();
         List<Long> longList = interviewee.summationOfSetBits(testNumber);
-        Assert.assertFalse(longList.isEmpty());
-        Assert.assertEquals(1, longList.size());
-        Assert.assertEquals(1073741824, longList.get(0).longValue());
+        assertFalse(longList.isEmpty());
+        assertEquals(1, longList.size());
+        assertEquals(1073741824, longList.get(0).longValue());
     }
 
     @Test
@@ -67,7 +68,7 @@ public class ExtractBitsFastPassTest {
         LOGGER.info("summationOfSetBitsWithZero");
         ExtractBits interviewee = new ExtractBitsFastPass();
         List<Long> longList = interviewee.summationOfSetBits(0);
-        Assert.assertTrue(longList.isEmpty());
+        assertTrue(longList.isEmpty());
     }
 
     @Test
@@ -75,6 +76,6 @@ public class ExtractBitsFastPassTest {
         LOGGER.info("summationOfSetBitsWithNegative");
         ExtractBits interviewee = new ExtractBitsFastPass();
         List<Long> longList = interviewee.summationOfSetBits(-1);
-        Assert.assertTrue(longList.isEmpty());
+        assertTrue(longList.isEmpty());
     }
 }
