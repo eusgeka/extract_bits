@@ -40,6 +40,7 @@ public class ExtractBitsFastPass implements ExtractBits {
      *
      * @param inputNumber
      */
+    @Override
     public List<Long> summationOfSetBits(long inputNumber) {
         long extractedNumber;
         List<Long> longList = new ArrayList<>();
