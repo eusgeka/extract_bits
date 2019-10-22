@@ -43,6 +43,7 @@ public class ExtractBitsTraditionalPass implements ExtractBits {
      *
      * @param inputNumber
      */
+    @Override
     public List<Long> summationOfSetBits(long inputNumber) {
         List<Long> longList = new ArrayList<>();
         if (inputNumber < LIMIT) {
@@ -50,13 +51,13 @@ public class ExtractBitsTraditionalPass implements ExtractBits {
             return longList;
         }
 
-        StringBuffer numberAsStringBuffer = new StringBuffer(Long.toBinaryString(inputNumber));
+        String numberAsString = Long.toBinaryString(inputNumber);
 
         int powerOf = 0;
         int howManyIterations = 0;
 
-        for (int index = numberAsStringBuffer.length() - 1; index >= 0; index--) {
-            int extractedNumber = Integer.valueOf(numberAsStringBuffer.charAt(index));
+        for (int index = numberAsString.length() - 1; index >= 0; index--) {
+            int extractedNumber = Integer.valueOf(numberAsString.charAt(index));
             if (extractedNumber == ASCII_OF_ONE) {
                 long extractedLong = (long) Math.pow(BASE_OF_TWO, powerOf);
                 longList.add(extractedLong);
